@@ -51,8 +51,8 @@ Once vimmouse is run, then keybaord act like a physical mouse:
 
 - Press h  key to move the pointer to left ( Or press left arrow key ).
 - Press l  key to move the pointer to right  ( Or press right arrow key ).
-- Press j  key to move the pointer to up  ( Or press up arrow key ).
-- Press k  key to move the pointer to down  ( Or press down arrow key ).
+- Press k  key to move the pointer to up  ( Or press up arrow key ).
+- Press j  key to move the pointer to down  ( Or press down arrow key ).
 - Press z key speed down the pointer movment ( Or Press Shift key or Ctrl key ).
 - Press x key speed up the pointer movment ( or use Win key or Alt key ).
 
