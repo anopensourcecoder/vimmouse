@@ -13,9 +13,19 @@ Did you forget to bring your mouse? Can't use mouse inside a car? Selecting text
 If you are already familior with Vim key binding style, you will be at home. If not vimmouse help you to return to home :)
 
 
-## Installation on Ubuntu
+## Installation on Ubuntu with released version.
 
+- Download latest release from https://github.com/anopensourcecoder/vimmouse/releases  
+- Copy vimmouse file into ~/bin folder ( or /usr/local/bin folder )
+- make sure it is executable. 
+- Run it from terminal or by a hotkey.
 
+Here is a example:
+sudo mkdir -p /usr/local/bin
+sudo cp -f vimmouse /usr/local/bin
+chmod 755 /usr/local/bin/vimmouse
+
+## Installation on Ubuntu from source.
 ```
 sudo apt-get install libx11-dev libxtst-dev
 cd /tmp
