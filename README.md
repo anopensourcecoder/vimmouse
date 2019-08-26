@@ -1,26 +1,30 @@
-# xmouseless
+# VimMouse
 
-This program is a replacement for the physical mouse in X11.
-
-It aims to be simple and efficient.
+Simulate a physical mouse in linux with Vim key binding style.
 
 Features:
-- move the mouse with different speeds
-- click and grab
+- move the mouse with different speeds using arrow keys or Vim key binding.
+- Support mouse keys with press and hold and release.
 - execute shell commands
 
-## Installation
+
+Did you forget to bring your mouse? Can't use mouse inside a car? Selecting text is hard while moving? Your device don't have touchpad or  trackpoint? Can't use mouse key because your keyboard dont have numpad? Np! Use vimmouse!
+
+If you are already familior with Vim key binding style, you will be at home. If not vimmouse help you to return to home :)
+
+
+## Installation on Ubuntu
+
 
 ```
+sudo apt-get install libx11-dev libxtst-dev
+cd /tmp
+git clone https://github.com/anopensourcecoder/vimmouse
+cd vimmouse
 make
 sudo make install
 ```
-
-If you are not using an Arch based distro you might have to install some headers, e.g. on
-Debian based distros:
-```
-sudo apt-get install libx11-dev libxtst-dev
-```
+Above put vimmouse at /usr/local/bin/vimmouse
 
 ## Configuration
 
@@ -28,8 +32,38 @@ Edit config.h and reinstall. The configuration file should be self explaining.
 
 ## Usage
 
-When starting xmouseless, it grabs the keyboard and all defined bindings are
-available. When pressing an exit key, the program exits.
+You can start vimmouse from terminal by running mosuevim &
 
-You probably want to define a key binding for xmouseless in your desktop
-environment or window manager.
+Or you can run it by your own hotkey using xbindkeys
+
+
+Once vimmouse is run, then keybaord act like a physical mouse:
+
+- Press h  key to move the pointer to left ( Or press left arrow key ).
+- Press l  key to move the pointer to right  ( Or press right arrow key ).
+- Press j  key to move the pointer to up  ( Or press up arrow key ).
+- Press k  key to move the pointer to down  ( Or press down arrow key ).
+- Press z key speed down the pointer movment ( Or Press Shift key or Ctrl key ).
+- Press x key speed up the pointer movment ( or use Win key or Alt key ).
+
+To simulate mouse key:
+
+- Press a key to simulate pressing the left mouse key 
+- Hold a key to simulate holding down the left mouse key. While holding down the a keys you can move the mouse pointer. This can be usefull to select a text from terminal output or any other program.
+- Release a key to simulate releasing the left mouse key.
+- Use s key to simulate the middle mouse key ( Press and hold and release are supported).
+- Use d to simulate the right mouse key ( Press and hold and release are supported).
+
+To simulate mouse scroll wheel: 
+- Press q to scroll up
+- Press q to scroll down
+
+To quit mouse vim
+- Press Escape or e key to quit the vimmouse.
+- Pressing space key simulate left mouse key and quite the program.
+
+Have fun.
+
+### credit
+Orginal program is called xmouseless. It is created by jbensmann. ALL credit goes to him for his awsome work. I only modify it to work with Vim key binding style.  
+

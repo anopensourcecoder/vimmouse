@@ -1,4 +1,4 @@
-# xmouseless
+# vim mouse
 VERSION = 0.0.1
 CC      = /usr/bin/gcc
 CFLAGS  = -Wall -g
@@ -6,8 +6,8 @@ LDFLAGS = -lX11 -lXtst -lpthread
 
 PREFIX = /usr/local
 
-SRC = xmouseless.c
-BIN = xmouseless
+SRC = vimmouse.c
+BIN = vimmouse
 
 all: $(BIN)
 

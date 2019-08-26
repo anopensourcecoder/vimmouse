@@ -1,5 +1,5 @@
 /*
- * xmouseless
+ * vim mouse
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -150,7 +150,7 @@ void handle_key(XKeyEvent event) {
     for (i = 0; i < LENGTH(click_bindings); i++) {
         if (click_bindings[i].keysym == keysym) {
             click(click_bindings[i].button, is_press);
-            printf("click: %i %i\n", click_bindings[i].button, is_press);
+            //printf("click: %i %i\n", click_bindings[i].button, is_press);
         }
     }
 
@@ -158,7 +158,7 @@ void handle_key(XKeyEvent event) {
     for (i = 0; i < LENGTH(speed_bindings); i++) {
         if (speed_bindings[i].keysym == keysym) {
             speed = is_press ? speed_bindings[i].speed : default_speed;
-            printf("speed: %i\n", speed);
+            //printf("speed: %i\n", speed);
         }
     }
 
@@ -167,7 +167,7 @@ void handle_key(XKeyEvent event) {
         /* shell bindings */
         for (i = 0; i < LENGTH(shell_bindings); i++) {
             if (shell_bindings[i].keysym == keysym) {
-                printf("executing: %s\n", shell_bindings[i].command);
+                //printf("executing: %s\n", shell_bindings[i].command);
                 if (fork() == 0) {
                     system(shell_bindings[i].command);
                     exit(EXIT_SUCCESS);
