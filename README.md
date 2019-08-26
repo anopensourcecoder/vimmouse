@@ -21,9 +21,11 @@ If you are already familior with Vim key binding style, you will be at home. If 
 - Run it from terminal or by a hotkey.
 
 Here is a example:
+```
 sudo mkdir -p /usr/local/bin
 sudo cp -f vimmouse /usr/local/bin
 chmod 755 /usr/local/bin/vimmouse
+```
 
 ## Installation on Ubuntu from source.
 ```
@@ -75,5 +77,5 @@ To quit mouse vim
 Have fun.
 
 ### credit
-Orginal program is called xmouseless. It is created by jbensmann. ALL credit goes to him for his awsome work. I only modify it to work with Vim key binding style.  
+Orginal program is called xmouseless. It is created by jbensmann. All credit goes to him for his awsome work. I only modify it to work with Vim key binding style base on my need.  
 
