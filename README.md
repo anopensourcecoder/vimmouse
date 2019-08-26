@@ -3,9 +3,9 @@
 Simulate a physical mouse in linux with Vim key binding style.
 
 Features:
-- move the mouse with different speeds using arrow keys or Vim key binding.
+- Move the mouse with different speeds using arrow keys or Vim key binding.
 - Support mouse keys with press and hold and release.
-- execute shell commands
+- Execute shell commands
 
 
 Did you forget to bring your mouse? Can't use mouse inside a car? Selecting text is hard while moving? Your device don't have touchpad or  trackpoint? Can't use mouse key because your keyboard dont have numpad? Np! Use vimmouse!
